@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MundoMuñecas</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+    <div class="barra-de-arriba">
+        <div class="logo">
+        <p><img src="img/logo.png" alt="Logo" class="logo-imagen"></p>
+        <h1>MundoMuñecas</h1>
+        </div>
+        <div class="contacto">
+        <p><img src="img/telefono-1.png" alt=""> Llámanos al: 222-222</p>
+        </div>
+    </div>
+
+
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nuevas</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar Muñecas">
+            <button >Buscar</button>
+        </div>
+        <div class="carrito">
+        <span id="carrito">0</span>
+        <img src="img/carrito-1.png" alt="" >
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <div class="filtro">
+<p id="orden-texto">157 Muñecas, orden: <span id="criterio"><strong>Precio</strong></span></p>
+
+<select name="precio" id="select-precio">
+    <option selected disabled>Mas vendidas</option >
+    <option value="Precio">Precio</option>
+    <option value="Nuevas">Nuevas</option>
+</select>
+    </div>
+
+    <div class="productos">
+        <div class="producto">
+            <div class="imagen"><p><img src="img/mexicana.jpg" alt="muñeca mexicana" height="180" width="220"></p></div>
+            <p>Muñeca mexicana</p>
+                <button class=" fondo-carrito" data-id="1">
+                <img src="img/carrito-2.png" alt="" height="25px" id="contador-1">
+            </button>
+        </div>
+
+        <div class="producto">
+            <div class="imagen"><img src="img/china.jpg" alt="muñeca china" height="180" width="220"></div>
+            <p>Muñeca china</p>
+            <button class="fondo-carrito" data-id="2">
+                <img src="img/carrito-2.png" alt="" height="25px" id="contador-2">
+            </button>
+        </div>
+
+        <div class="producto">
+            <div class="imagen"> <img src="img/africana.jpg" alt="muñeca africana" height="180" width="220"></div>
+            <p>Muñeca africana</p>
+            <button class="fondo-carrito" data-id="3">
+                <img src="img/carrito-2.png" alt="" height="25px" id="contador-3">
+            </button>
+        </div>
+
+        <div class="producto">
+            <div class="imagen"><img src="img/holandesa.jpg" alt="muñeca holandesa" height="180" width="220"></div>
+            <p>Muñeca holandesa</p>
+            <button class="fondo-carrito" data-id="4">
+                <img src="img/carrito-2.png" alt="" height="25px" id="contador-4">
+            </button>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/logo.png" alt="" width="50px" height="50px">
+        <div class="iconos">
+            <img src="img/info.png" alt="">
+            <img src="img/email.png" alt="">
+            <img src="img/telefono-2.png" alt="">
+            <img class="final" src="img/preguntas.png" alt="" onclick="alert('MundoMuñecas, encuentra muñecas internacionales')">
+        </div>
+
+    </footer>
+    <script src="js/javacrit.js"></script>
+</body>
+
+</html>

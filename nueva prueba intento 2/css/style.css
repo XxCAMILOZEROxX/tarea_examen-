@@ -1,0 +1,291 @@
+/*informacion antes de empesar a revisar: siertos cambios en el css afectan el js ademas de que el cursor estara en default la mayor parte de la pagina por el video*/
+
+*{
+    margin: 0%;
+    cursor: default;
+}
+
+
+/*global*/
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #d7a7c0;
+    text-align: center;
+}
+
+.barra-de-arriba, nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+    gap: 8px;
+}
+
+.logo-imagen {
+    width: 90px;
+    height: 90px;
+}
+.carrito p{
+    font-size: 1,5rem;
+}
+
+.carrito img{
+    height: 30px;
+    width: 30px;
+}
+
+/*  Navegación */
+nav {
+
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/*  Buscar */
+.carrito{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 2rem;
+    align-items: center;
+
+}
+
+.filtro{
+display: flex;
+justify-content: space-between;
+padding: 0px 100px 0px 100px;
+}
+
+.busqueda input {
+    padding: 10px 150px 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.busqueda button {
+    padding: 10px 5px 10px 5px;
+    border: none;
+    background: #d7a7c0;
+    cursor: pointer;
+}
+
+
+/* Productos incluido con una parte de las imagenes*/
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+    transition: 0.2s;
+        font-size: 1.5rem;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.producto .imagen {
+    background: #ddd;
+    width: 100%;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 100px;
+        font-size: 1,5rem;
+
+}
+
+/*el cuadro que encierra la imagen del carrito que es interactuable*/
+.fondo-carrito {
+    background: #d7a7c0;
+    border: nongae;
+    border-radius: 500%;
+    width: 50px;
+    height: 50px;
+
+}
+/*cosita minuscula que cambia bastante del footer*/
+footer {
+    background: #d7a7c0;
+    text-align: center;
+    padding: 15px 40px;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos{
+margin-left: 80%;
+display: flex;
+gap: 10px;
+display: flex;
+justify-content: space-between;
+
+}
+
+
+/* ------------------------------ */
+/*   ADAPTACIÓN PARA IPHONE SE    */
+/*   (pantallas <= 375px ancho)   */
+/* ------------------------------ */
+@media (max-width: 375px) {
+
+    /* Header superior */
+    .barra-de-arriba {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo-imagen {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contacto p {
+        font-size: 0.9rem;
+    }
+
+    /* NAV superior */
+    nav {
+        flex-direction: column;
+        padding: 10px 5px;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .busqueda input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .busqueda button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .carrito {
+        font-size: 1.2rem;
+    }
+
+    .carrito img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Filtro */
+    .filtro {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    /* Productos */
+    .productos {
+        gap: 15px;
+    }
+
+    .producto {
+        width: 160px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .producto .imagen img {
+        width: 140px;
+        height: auto;
+    }
+
+    .producto .imagen {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .fondo-carrito {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .iconos {
+        margin-left: 0;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .iconos img {
+        width: 30px;
+        height: 30px;
+    }
+}
